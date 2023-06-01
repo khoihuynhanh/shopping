@@ -1,0 +1,89 @@
+.wrapper {
+    width: calc(100% / 5 - 20px);
+    height: 400px;
+
+    .item {
+        border: 1px solid #e4e4e4;
+        height: 300px;
+        margin-bottom: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .image {
+            width: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transform: scale(0.5);
+            }
+        }
+
+        .btn_cart_view {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            opacity: 0;
+
+            button {
+                background-color: transparent;
+                border: none;
+                font-size: 1.4rem;
+                color: #fff;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+            }
+
+            .cart {
+                background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+                padding: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+
+            .view {
+                background-color: #fff;
+                padding: 5px;
+                color: #000;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    
+    .description {
+        width: 100%;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        padding: 0 8px;
+
+        p {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+
+.inner:hover .btn_cart_view {
+    opacity: 1;
+    transition: linear 0.7s;
+}
+.inner:hover .image img {
+    transform: scale(0.55);
+    transition: all 0.5s;
+}

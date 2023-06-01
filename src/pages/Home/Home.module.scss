@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 4rem;
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+
+        .filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .item {
+                width: calc(100% / 5 - 20px);
+                height: 300px;
+                background-color: #fed7e2;
+            }
+        }
+    }
+}

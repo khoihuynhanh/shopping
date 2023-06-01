@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 40px;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+    .logo {
+        cursor: pointer;
+        font-size: 2.5rem;
+        color: #000;
+    }
+
+    .bag_shopping {
+        display: flex;
+        position: relative;
+
+        .bag_icon {
+            cursor: pointer;
+            font-size: 2.5rem;
+        }
+
+        .item_amount {
+            background-color: transparent;
+            border: 1px solid #000;
+            width: 20px;
+            height: 20px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 50%;
+            position: absolute;
+            right: -16px;
+            top: -10px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.bg-normal {
+    background-color: transparent
+}
+
+.bg-active {
+    background-color: #fff;
+}
